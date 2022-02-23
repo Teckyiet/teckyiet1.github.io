@@ -595,9 +595,13 @@ footer {
   margin-bottom: 16px;
 }
 
-.profile-detail > h3{
+.profile-detail > h3 {
   font-size: 18px;
-  background: linear-gradient(to right, rgb(206, 102, 5)10%, rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    to right,
+    rgb(206, 102, 5) 10%,
+    rgba(255, 255, 255, 0)
+  );
   color: white;
   padding: 2px 4px;
 }
@@ -641,7 +645,7 @@ button {
   transition: 0.3s;
 }
 
-button:hover{
+button:hover {
   transform: scale(120%);
   background-color: rgb(6, 148, 167);
   cursor: pointer;
