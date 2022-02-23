@@ -612,13 +612,13 @@ input::-webkit-inner-spin-button {
 }
 
 .burger-icon {
-  background: url(../images/icon/burgers.gif);
+  background: url(../images/Icon/burgers.gif);
   background-position: center;
   background-size: 330%;
 }
 
 .salad-icon {
-  background: url(../images/icon/salads.gif);
+  background: url(../images/Icon/salads.gif);
   background-position: 97px 77px;
   background-size: 380%;
 }
