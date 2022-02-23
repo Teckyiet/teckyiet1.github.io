@@ -377,7 +377,7 @@ h3 {
 
 .decor {
   --fun: ;
-  background: url(/images/burger\ decor.png);
+  background: url(../images/burger\ decor.png);
   background-size: 92%;
   background-repeat: no-repeat;
   background-position: 50%, 50%;
@@ -446,7 +446,7 @@ h3 {
 .decor::after {
   content: "";
   display: block;
-  background: url(/images/moustache.png);
+  background: url(../images/moustache.png);
   background-size: 95%;
   background-position: 50% 50%;
   background-repeat: no-repeat;

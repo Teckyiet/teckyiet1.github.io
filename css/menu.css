@@ -612,25 +612,25 @@ input::-webkit-inner-spin-button {
 }
 
 .burger-icon {
-  background: url(/images/icon/burgers.gif);
+  background: url(../images/icon/burgers.gif);
   background-position: center;
   background-size: 330%;
 }
 
 .salad-icon {
-  background: url(/images/icon/salads.gif);
+  background: url(../images/icon/salads.gif);
   background-position: 97px 77px;
   background-size: 380%;
 }
 
 .dessert-icon {
-  background: url(/images/Icon/desserts.gif);
+  background: url(../images/Icon/desserts.gif);
   background-position: 49% 45%;
   background-size: 370%;
 }
 
 .smoothie-icon {
-  background: url(/images/Icon/smoothies.gif);
+  background: url(../images/Icon/smoothies.gif);
   background-position: 50% 48%;
   background-size: 360%;
 }
@@ -652,109 +652,109 @@ input::-webkit-inner-spin-button {
 }
 
 .burger1-img {
-  background: url(/images/Overstuffed\ Signature\ Deluxe\ Burger.jpg);
+  background: url(../images/Overstuffed\ Signature\ Deluxe\ Burger.jpg);
   background-position: 80% 50%;
   background-size: 103%;
 }
 
 .burger2-img {
-  background: url(/images/Classic\ Beef\ Burger.jpg);
+  background: url(../images/Classic\ Beef\ Burger.jpg);
   background-position: 80%;
   background-size: 148%;
 }
 
 .burger3-img {
-  background: url(/images/Benedict\ Egg\ Burger.jpg);
+  background: url(../images/Benedict\ Egg\ Burger.jpg);
   background-position: 50% 60%;
   background-size: 130%;
 }
 
 .burger4-img {
-  background: url(/images/AvocaSteak\ Burger.jpg);
+  background: url(../images/AvocaSteak\ Burger.jpg);
   background-position: 35% 66%;
   background-size: 180%;
 }
 
 .burger5-img {
-  background: url(/images/Crispy\ Chicken\ Burger.jpg);
+  background: url(../images/Crispy\ Chicken\ Burger.jpg);
   background-position: 35% 60%;
   background-size: 104%;
 }
 
 .burger6-img {
-  background: url(/images/Double\ Cheese\ Burger.jpg);
+  background: url(../images/Double\ Cheese\ Burger.jpg);
   background-position: 35% 25%;
   background-size: 108%;
 }
 
 .salad1-img {
-  background: url(/images/Greek\ Salad.jpg);
+  background: url(../images/Greek\ Salad.jpg);
   background-position: 45% 50%;
   background-size: 128%;
 }
 
 .salad2-img {
-  background: url(/images/Tacolicious\ Salad.jpg);
+  background: url(../images/Tacolicious\ Salad.jpg);
   background-position: 40% 55%;
   background-size: 153%;
 }
 
 .salad3-img {
-  background: url(/images//heirloom-tomato-fattoush-1.jpg);
+  background: url(../images//heirloom-tomato-fattoush-1.jpg);
   background-position: 45% 44%;
   background-size: 123%;
 }
 
 .salad4-img {
-  background: url(/images/Smoked\ Salmon\ Salad.jpeg);
+  background: url(../images/Smoked\ Salmon\ Salad.jpeg);
   background-position: 30% 50%;
   background-size: 200%;
 }
 
 .salad5-img {
-  background: url(/images/Citrus\ Fruit\ Salad.jpg);
+  background: url(../images/Citrus\ Fruit\ Salad.jpg);
   background-position: 45% 44%;
   background-size: 123%;
 }
 
 .dessert1-img {
-  background: url(/images/Cheese\ Pudding.jpg);
+  background: url(../images/Cheese\ Pudding.jpg);
   background-position: 100% 44%;
   background-size: 125%;
 }
 
 .dessert2-img {
-  background: url(/images/baileys-cookies-and-cream-parfaits-1.jpg);
+  background: url(../images/baileys-cookies-and-cream-parfaits-1.jpg);
   background-position: 0% 76%;
   background-size: 110%;
 }
 
 .dessert3-img {
-  background: url(/images/Crème\ Brûlée.jpg);
+  background: url(../images/Crème\ Brûlée.jpg);
   background-position: 30% 60%;
   background-size: 112%;
 }
 
 .dessert4-img {
-  background: url(/images/Strawberry\ Choco\ Mousse.jpg);
+  background: url(../images/Strawberry\ Choco\ Mousse.jpg);
   background-position: 43% 92%;
   background-size: 130%;
 }
 
 .smoothie1-img {
-  background: url(/images/Green\ Combo\ Smoothie.jpg);
+  background: url(../images/Green\ Combo\ Smoothie.jpg);
   background-position: 100% 62%;
   background-size: 98%;
 }
 
 .smoothie2-img {
-  background: url(/images/Strawberry\ Blast\ Smoothie.jpg);
+  background: url(../images/Strawberry\ Blast\ Smoothie.jpg);
   background-position: 43% 43%;
   background-size: 103%;
 }
 
 .smoothie3-img {
-  background: url(/images/banana-vanilla\ smoothie.jpg);
+  background: url(../images/banana-vanilla\ smoothie.jpg);
   background-position: 52% 75%;
   background-size: 166%;
 }
