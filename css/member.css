@@ -388,7 +388,7 @@ h3 {
 
 .decor::before {
   content: "Don't tickle me";
-  width: 120px;
+  width: 130px;
   height: 20px;
   display: block;
   position: absolute;
