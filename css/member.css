@@ -563,7 +563,7 @@ footer {
   display: block;
   width: 1.3em;
   height: 1.3em;
-  background: url(/images/Icon/soc_facebook.png);
+  background: url(../images/Icon/soc_facebook.png);
   background-size: cover;
 }
 
@@ -571,7 +571,7 @@ footer {
   display: block;
   width: 1.3em;
   height: 1.3em;
-  background: url(/images/Icon/soc_instagram.png);
+  background: url(../images/Icon/soc_instagram.png);
   background-size: cover;
 }
 

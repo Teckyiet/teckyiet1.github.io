@@ -810,13 +810,13 @@ footer {
 .social-media .facebook-icon {
   width: 1.3em;
   height: 1.3em;
-  background: url(https://www.juiceworks.com.my/wp-content/themes/default/images/common/soc_facebook.png);
+  background: url(../images/Icon/soc_facebook.png);
   background-size: cover;
 }
 
 .social-media .insta-icon {
   width: 1.3em;
   height: 1.3em;
-  background: url(https://www.juiceworks.com.my/wp-content/themes/default/images/common/soc_instagram.png);
+  background: url(../images/Icon/soc_instagram.png);
   background-size: cover;
 }
