@@ -1001,6 +1001,6 @@ const updateProfile = () =>{
         
         }
     alert('Profile is updated successfully. Happy munching with us!')
-    updateButtonLink.href ='/index.html'
+    updateButtonLink.href ='../index.html'
     })
 }
