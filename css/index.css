@@ -5,6 +5,7 @@
   --header-background: rgb(230, 178, 36);
   --font-color: rgb(87, 87, 87);
 }
+
 body {
   min-height: 90vh;
   position: relative;
@@ -17,7 +18,7 @@ header {
   position: relative;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   header {
     font-size: 1.6rem;
     padding: 0.6em 0.6em;
@@ -52,7 +53,7 @@ header {
   z-index: 2;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .circle {
     width: 1.2em;
     height: 1.2em;
@@ -128,6 +129,80 @@ header {
   color: rgb(34, 34, 34);
   text-align: center;
   margin-bottom: 0.3em;
+}
+
+.account-relates-wrapper {
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .account-relates-wrapper {
+    display: none;
+  }
+}
+
+.expand-button {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 36px;
+  padding: 5px 6px;
+  background: rgb(196, 105, 1);
+  border-radius: 3px;
+}
+
+.expand-button span {
+  display: block;
+  border-bottom: 2px solid white;
+  margin-bottom: 3px;
+}
+
+.expand-button span:first-child {
+  margin-top: 3px;
+}
+
+.account-relates-wrapper ul {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: auto;
+  max-height: 0px;
+  overflow: hidden;
+  border-radius: 6px;
+  transition-property: max-height;
+  transition-duration: 0.5s;
+}
+
+.account-relates-wrapper ul li {
+  list-style: none;
+  background: rgb(37, 37, 37);
+  border-bottom: 1px solid rgb(209, 112, 0);
+}
+
+.account-relates-wrapper ul li a {
+  text-decoration: none;
+  color: rgb(209, 112, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 550;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.account-relates-wrapper ul li a:hover {
+  background: rgb(235, 235, 235);
+}
+
+.account-relates-wrapper ul li:last-child {
+  border-bottom: none;
 }
 
 .nav-container .nav-list ul {

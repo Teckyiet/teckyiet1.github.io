@@ -3,6 +3,23 @@ const slidingTexts = document.querySelectorAll('.text')
 const nextButton = document.querySelector('.next-btn')
 const previousButton = document.querySelector('.previous-btn')
 const firstNavDot = document.querySelector('.nav-dot1')
+const accountExpandButton = document.querySelector('.expand-button')
+const accountRelatedListBox = document.querySelector('.account-relates-wrapper ul')
+const expandListCancelButton = document.querySelector('.expand-button ul li:last-child a')
+
+accountExpandButton.addEventListener('mouseover', ()=>{
+    accountRelatedListBox.style.setProperty('max-height', '200px')
+})
+
+accountExpandButton.addEventListener('mouseout', ()=>{
+    accountRelatedListBox.style.setProperty('max-height', '0px')
+})
+
+expandListCancelButton.addEventListener('click', ()=>{
+    accountRelatedListBox.style.setProperty('max-height', '0px')
+})
+
+
 
 let positionValue = 0
 let currentValue = 0

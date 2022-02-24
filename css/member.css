@@ -250,12 +250,12 @@ h3 {
 }
 
 .membership-info::before {
-  content: "\272F";
+  content: "<<\272F";
   display: block;
   color: rgb(230, 229, 228);
   font-size: 70px;
   position: absolute;
-  transform: translate(300%, 40%);
+  transform: translate(110%, 38%);
   font-family: "Cabin Sketch", cursive;
 }
 
