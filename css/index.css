@@ -14,7 +14,7 @@ body {
 header {
   font-size: 2.6rem;
   background: var(--header-background);
-  padding: 0.8em 2.2em;
+  padding: 0.8em 1.7em;
   position: relative;
 }
 
@@ -131,6 +131,7 @@ header {
   margin-bottom: 0.3em;
 }
 
+/* -------------- accounts components for screen width < 700px -------------- */
 .account-relates-wrapper {
   font-size: 1rem;
   position: absolute;
@@ -138,18 +139,12 @@ header {
   right: 0;
 }
 
-@media only screen and (min-width: 700px) {
-  .account-relates-wrapper {
-    display: none;
-  }
-}
-
 .expand-button {
   position: relative;
   top: 0;
   right: 0;
-  width: 36px;
-  padding: 5px 6px;
+  width: 40px;
+  padding: 7px 6px;
   background: rgb(196, 105, 1);
   border-radius: 3px;
 }
@@ -205,6 +200,61 @@ header {
   border-bottom: none;
 }
 
+/* -------------- accounts components for screen width > 700px -------------- */
+
+.account-relates-wrapper2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.account-component > a {
+  text-decoration: none;
+  color: rgb(190, 76, 0);
+  padding: 6px 8px;
+}
+
+.sign-up {
+  border-right: 1px solid rgb(190, 76, 0);
+}
+
+.login {
+  padding-right: 0px;
+  border-left: 1px solid rgb(190, 76, 0);
+}
+
+.account-component > a:hover {
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+/* ---------------- screen condition for account components ---------------- */
+@media only screen and (min-width: 1000px) {
+  .account-component > a {
+    text-decoration: none;
+    padding: 8px 20px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .account-relates-wrapper2 {
+    background: red;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .account-relates-wrapper {
+    display: none;
+  }
+}
+
+/* --------------------------------- nav-bar -------------------------------- */
 .nav-container .nav-list ul {
   display: flex;
   justify-content: center;
