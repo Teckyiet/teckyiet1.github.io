@@ -219,12 +219,12 @@ header {
 }
 
 .sign-up {
-  border-right: 1px solid rgb(190, 76, 0);
+  padding-right: 0px;
+  border-left: 1px solid rgb(190, 76, 0);
 }
 
 .login {
-  padding-right: 0px;
-  border-left: 1px solid rgb(190, 76, 0);
+  border-right: 1px solid rgb(190, 76, 0);
 }
 
 .account-component > a:hover {

@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --header-background: rgb(230, 178, 36);
+  --font-color: rgb(87, 87, 87);
+}
+body {
+  min-height: 90vh;
+  position: relative;
+}
+
+header {
+  font-size: 2.6rem;
+  background: var(--header-background);
+  padding: 0.8em 1.7em;
+  position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    font-size: 1.6rem;
+    padding: 0.6em 0.6em;
+  }
+}
+
+.nav-container {
+  border: 0.13em solid rgb(255, 255, 255);
+  border-radius: 0.3em;
+  padding: 0.6em;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.8)
+  );
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 0.7em;
+  background: linear-gradient(
+    to bottom right,
+    rgb(230, 178, 36, 0.2) 10%,
+    rgba(145, 86, 47, 0.822),
+    rgb(48, 27, 22)
+  );
+  position: absolute;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 500px) {
+  .circle {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+.big-circle1 {
+  top: 49%;
+  left: 1%;
+}
+
+.big-circle2 {
+  top: 7%;
+  left: 80%;
+}
+
+.big-circle3 {
+  top: 9%;
+  left: 22%;
+}
+
+.big-circle4 {
+  top: 66%;
+  left: 29%;
+}
+
+.big-circle5 {
+  top: 64%;
+  left: 89%;
+}
+
+.small-circle {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 0.4em;
+}
+
+@media only screen and (max-width: 450px) {
+  .small-circle {
+    width: 0.7em;
+    height: 0.7em;
+  }
+}
+
+.small-circle1 {
+  top: 3%;
+  left: 7%;
+}
+
+.small-circle2 {
+  top: 80%;
+  left: 14%;
+}
+
+.small-circle3 {
+  top: 31%;
+  left: 94.5%;
+}
+
+.small-circle4 {
+  top: 76%;
+  left: 70%;
+}
+
+.small-circle5 {
+  top: 10%;
+  left: 56%;
+}
+
+.nav-container h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 1.2em;
+  color: rgb(34, 34, 34);
+}
+
+/* -------------- accounts components for screen width < 700px -------------- */
+.account-relates-wrapper {
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .expand-button {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 40px;
+    padding: 7px 6px;
+    background: rgb(196, 105, 1);
+    border-radius: 3px;
+  }
+  
+  .expand-button span {
+    display: block;
+    border-bottom: 2px solid white;
+    margin-bottom: 3px;
+  }
+  
+  .expand-button span:first-child {
+    margin-top: 3px;
+  }
+  
+  .account-relates-wrapper ul {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    max-height: 0px;
+    overflow: hidden;
+    border-radius: 6px;
+    transition-property: max-height;
+    transition-duration: 0.5s;
+  }
+
+  @media only screen and (min-width: 500px){
+    .account-relates-wrapper ul{
+        width: 80vw;
+    }
+  }
+  
+  .account-relates-wrapper ul li {
+    list-style: none;
+    background: rgb(37, 37, 37);
+    border-bottom: 1px solid rgb(209, 112, 0);
+  }
+  
+  .account-relates-wrapper ul li a {
+    text-decoration: none;
+    color: rgb(209, 112, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 550;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .account-relates-wrapper ul li a:hover {
+    background: rgb(235, 235, 235);
+  }
+  
+  .account-relates-wrapper ul li:last-child {
+    border-bottom: none;
+  }
+  
+  /* -------------- accounts components for screen width > 700px -------------- */
+  
+  .account-relates-wrapper2 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .account-component > a {
+    text-decoration: none;
+    color: rgb(190, 76, 0);
+    padding: 6px 8px;
+  }
+  
+  .sign-up {
+    border-left: 1px solid rgb(190, 76, 0);
+    padding-right: 0px;
+  }
+  
+  .login {
+    border-right: 1px solid rgb(190, 76, 0);
+  }
+  
+  .account-component > a:hover {
+    color: white;
+    text-shadow: 3px 3px 10px black;
+  }
+  
+  /* ---------------- screen condition for account components ---------------- */
+  @media only screen and (min-width: 1000px) {
+    .account-component > a {
+      text-decoration: none;
+      padding: 8px 20px;
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .account-relates-wrapper2 {
+      background: red;
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 700px) {
+    .account-relates-wrapper {
+      display: none;
+    }
+  }
+
+/* --------------------------------- section -------------------------------- */
+
+section {
+  background: linear-gradient(
+    to bottom,
+    rgba(230, 178, 36, 0.6),
+    rgb(255, 255, 255)
+  );
+  display: block;
+  padding: 1px;
+}
+
+.big-box{
+    width: 80vw;
+    height: 25vh;
+    background: rgba(0, 255, 136, 0.459);
+    margin: auto;
+    border: 4px solid black;
+    background-blend-mode: color-burn;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 10;
+    perspective: 100px;
+}
+
+.big-box::after{
+    content: '';
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: rgb(170, 4, 134);
+    z-index: 2;
+}
+
+.small-box2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: orange;
+    z-index: 2;
+}
+
+.small-box{
+    width: 900px;
+    height: 50px;
+    background: rgba(13, 190, 152, 0.438);
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%) rotateX(80deg);
+    filter: blur(8px);
+}
+
+.other-box{
+    width: 400px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------- FOOTER --------------------------------- */
+footer {
+  width: 100%;
+  height: 12vh;
+  background: black;
+  display: flex;
+  position: absolute;
+  top: 100%;
+}
+
+.footer-wrapper {
+  font-size: 2rem;
+  color: white;
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .footer-wrapper {
+    font-size: 3rem;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* --------------------------- Footer__footer-text -------------------------- */
+.footer-text {
+  font-size: 0.4em;
+  padding: 1em;
+}
+
+/* -------------------------- Footer__social-media -------------------------- */
+.social-media {
+  display: flex;
+  width: 6em;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 0.4em;
+  margin-right: 8px;
+}
+
+.social-media .facebook-icon a {
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+  background: url(../images/Icon/soc_facebook.png);
+  background-size: cover;
+}
+
+.social-media .insta-icon a {
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+  background: url(../images/Icon/soc_instagram.png);
+  background-size: cover;
+}
