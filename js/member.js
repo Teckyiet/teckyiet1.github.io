@@ -30,7 +30,7 @@ registerBtn.addEventListener('click', ()=>{
         if(inputDetails[1].value.length < 8){
             return alert('Invalid Password')}
 
-        registerBtn.href = 'html/update-profile.html'
+        registerBtn.href = 'update-profile.html'
 })
 
 document.body.addEventListener('mousemove', (event)=>{
