@@ -169,6 +169,7 @@ header {
   max-height: 0px;
   overflow: hidden;
   border-radius: 6px;
+  z-index: 15;
   transition-property: max-height;
   transition-duration: 0.5s;
 }
@@ -291,7 +292,7 @@ section {
   box-shadow: inset 1px 2px 6px 1px black;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 .screen {
