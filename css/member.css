@@ -516,27 +516,29 @@ p {
 /* --------------------------------- FOOTER --------------------------------- */
 footer {
   width: 100%;
-  height: 12vh;
   background: black;
   display: flex;
   position: absolute;
-  top: 100%;
+  top: 105%;
 }
 
 .footer-wrapper {
   font-size: 2rem;
   color: white;
-  width: 120%;
+  width: 100%;
+  min-height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 @media only screen and (min-width: 700px) {
   .footer-wrapper {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     width: 100%;
+    min-height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -545,18 +547,19 @@ footer {
 
 /* --------------------------- Footer__footer-text -------------------------- */
 .footer-text {
+  width: 80%;
   font-size: 0.4em;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 /* -------------------------- Footer__social-media -------------------------- */
 .social-media {
   display: flex;
-  width: 6em;
-  justify-content: space-evenly;
+  width: 3em;
+  max-width: 5em;
+  justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.4em;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .social-media .facebook-icon a {
