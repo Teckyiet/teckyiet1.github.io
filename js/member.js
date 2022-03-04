@@ -75,7 +75,6 @@ const burgerDecor = document.querySelector('.decor')
 
 burgerDecor.addEventListener('click', ()=>{
     if(getComputedStyle(burgerDecor).getPropertyValue('--fun') != 'shake'){
-        console.log(123)
 
         burgerDecor.style.setProperty('--fun', 'shake');
 
