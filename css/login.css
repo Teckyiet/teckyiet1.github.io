@@ -2,11 +2,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  --header-background: rgb(231, 158, 0);
+  --header-background: rgb(231, 169, 0);
   --font-color: rgb(87, 87, 87);
 }
 body {
   min-height: 90vh;
+  height: 90vh;
   position: relative;
   background:rgb(255, 255, 255);
 }
@@ -274,7 +275,6 @@ section {
   width: 90vw;
   max-width: 300px;
   height: 300px;
-  border: 2px solid red;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -284,7 +284,20 @@ section {
 
 .login-header h2{
   color:rgb(190, 76, 0);
-  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.8rem;
+  margin: 0px 6px;
+}
+
+.login-header, .login-button{
+  display: flex;
+  align-items: center;
+}
+
+.line{
+  width: 100px;
+  height: 1px;
+  border: 1px solid rgb(155, 8, 8);
 }
 
 .account-details {
@@ -294,11 +307,31 @@ section {
   justify-content: space-evenly;
 }
 
+
+
 .login-button button {
-  padding: 8px 16px;
+  padding: 8px 18px;
   background: black;
   color: white;
   border-radius: 6px;
+  margin: 0px 6px;
+}
+
+.password::before{
+  content: 'Forget password?';
+  display: block;
+  position: relative;
+  font-size: 12px;
+  top: 105%;
+  right: -60%;
+  color: rgb(4, 108, 226);
+  cursor: pointer;
+}
+
+.password:hover::before{
+  transform-origin: 25% 50%;
+  transform: scale(110%);
+  font-weight: 600;
 }
 
 
@@ -312,7 +345,6 @@ footer {
   display: flex;
   position: absolute;
   top: 100%;
-  margin-top: 20px;
 }
 
 .footer-wrapper {
