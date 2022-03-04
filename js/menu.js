@@ -1,3 +1,20 @@
+const accountExpandButton = document.querySelector('.expand-button')
+const accountRelatedListBox = document.querySelector('.account-relates-wrapper ul')
+const expandListCancelButton = document.querySelector('.expand-button ul li:last-child a')
+
+accountExpandButton.addEventListener('mouseover', ()=>{
+    accountRelatedListBox.style.setProperty('max-height', '200px')
+})
+
+accountExpandButton.addEventListener('mouseout', ()=>{
+    accountRelatedListBox.style.setProperty('max-height', '0px')
+})
+
+expandListCancelButton.addEventListener('click', ()=>{
+    accountRelatedListBox.style.setProperty('max-height', '0px')
+})
+
+/* --------------------------------- menu-js -------------------------------- */
 const  expandToggleBtn = document.querySelectorAll('.items-category-bar')
 const itemsListBox = document.querySelectorAll('.items-list')
 

@@ -123,6 +123,130 @@ header {
   left: 56%;
 }
 
+/* -------------- accounts components for screen width < 700px -------------- */
+.account-relates-wrapper {
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.expand-button {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 40px;
+  padding: 6px 6px;
+  background: rgb(196, 105, 1);
+  border-radius: 3px;
+}
+
+.expand-button span {
+  display: block;
+  border-bottom: 2px solid white;
+  margin-bottom: 5px;
+}
+
+.expand-button span:first-child {
+  margin-top: 5px;
+}
+
+.account-relates-wrapper ul {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: auto;
+  max-height: 0px;
+  overflow: hidden;
+  border-radius: 6px;
+  transition-property: max-height;
+  transition-duration: 0.5s;
+}
+
+.account-relates-wrapper ul li {
+  list-style: none;
+  background: rgb(37, 37, 37);
+  border-bottom: 1px solid rgb(209, 112, 0);
+}
+
+.account-relates-wrapper ul li a {
+  text-decoration: none;
+  color: rgb(209, 112, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 550;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.account-relates-wrapper ul li a:hover {
+  background: rgb(235, 235, 235);
+}
+
+.account-relates-wrapper ul li:last-child {
+  border-bottom: none;
+}
+
+/* -------------- accounts components for screen width > 700px -------------- */
+
+.account-relates-wrapper2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.account-component > a {
+  text-decoration: none;
+  color: rgb(190, 76, 0);
+  padding: 6px 8px;
+}
+
+.sign-up {
+  padding-right: 0px;
+  border-left: 1px solid rgb(190, 76, 0);
+}
+
+.login {
+  border-right: 1px solid rgb(190, 76, 0);
+}
+
+.account-component > a:hover {
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+/* ---------------- screen condition for account components ---------------- */
+@media only screen and (min-width: 1000px) {
+  .account-component > a {
+    text-decoration: none;
+    padding: 8px 20px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .account-relates-wrapper2 {
+    background: red;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .account-relates-wrapper {
+    display: none;
+  }
+}
+
+/* ------------------------------ nav-container ----------------------------- */
 .nav-container h1 {
   font-family: "Fredericka the Great", cursive;
   font-size: 1.2em;
