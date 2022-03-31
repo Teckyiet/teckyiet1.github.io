@@ -206,7 +206,7 @@ header {
 
 .account-component > a {
   text-decoration: none;
-  color: rgb(190, 76, 0);
+  color: rgb(190, 76, 0) !important;
   padding: 6px 8px;
 }
 
